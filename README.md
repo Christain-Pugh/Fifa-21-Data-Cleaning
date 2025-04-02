@@ -1,8 +1,22 @@
 # Fifa-21-Data-Cleaning
-The following repository contains a data cleaning project I took on using the Kaggle Fifa 21 messy dataset.
-As an aspiring data analyst I took this project on to show my data cleaning skills in Python.
+**Project Overview**
+This project involves data cleaning and preprocessing of FIFA 21 player statistics, with the goal of transforming raw data into a format suitable for analysis or machine learning applications. The dataset consists of detailed player attributes, including information on player skills, positions, and performance metrics.
 
-Here are the steps I took to clean the data set.
+In this project, I applied several data cleaning techniques using Python libraries such as Pandas to clean, structure, and prepare the data. The process includes handling missing values, correcting data inconsistencies, and ensuring that the dataset is ready for further analysis or model building.
+
+**Key Features**
+- Data Cleaning: Addressing missing values, duplicates, and incorrect data entries.
+
+- Data Transformation: Normalizing numerical values and encoding categorical features.
+
+- Data Export: Cleaned data exported to CSV for easy access and further processing.
+
+**Technologies Used**
+- Python (Programming Language)
+
+- Pandas (Data Manipulation)
+
+**Transformations & Cleaning**
 1. The Club column had newline characters in almost every row. I wrote to replace any instance of "\n" with an empty space to make it more readable
 
 2. The Weight column was divided up between weight measured in both lbs, and kgs. I wrote a loop that removes both "lbs", and "kg" from the rows then wrote a loop that converts all lbs to kg's to help keep the data more consistent. I also changed the data type to integer to make it easier to aggregate in the case of analysis.
