@@ -16,6 +16,8 @@ In this project, I applied several data cleaning techniques using Python librari
 
 - Pandas (Data Manipulation)
 
+- re (To write regular expressions for data cleaning)
+
 **Transformations & Cleaning**
 1. The Club column had newline characters in almost every row. I wrote to replace any instance of "\n" with an empty space to make it more readable
 
