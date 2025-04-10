@@ -18,7 +18,7 @@ In this project, I applied several data cleaning techniques using Python librari
 
 - re (To write regular expressions for data cleaning)
 
-**Transformations & Cleaning**
+**Transformation & Cleaning Process**
 1. The Club column had newline characters in almost every row. I wrote to replace any instance of "\n" with an empty space to make it more readable
 
 2. The Weight column was divided up between weight measured in both lbs, and kgs. I wrote a loop that removes both "lbs", and "kg" from the rows then wrote a loop that converts all lbs to kg's to help keep the data more consistent. I also changed the data type to integer to make it easier to aggregate in the case of analysis.
@@ -29,7 +29,7 @@ In this project, I applied several data cleaning techniques using Python librari
 
 5. I divided the Month, Day, and Year from the Joined column. This was more so done as an excercise in Python since the joined column had the dates represented as a mix of string, integer, and characters that would need seperated and removed in order to properly move all the data into seperate columns.
 
-6. I used my convert_to_full_value function written earlier to conver the Wage of each player into an integer with no euro symbol, once again to assist in potential aggregation.
+6. I used my convert_to_full_value function written earlier to convert the Wage of each player into an integer with no euro symbol, once again to assist in potential aggregation.
 
 7. I then dropped the 'Weight_Value', 'Height_cm', 'Loan Date End', 'Unit', 'Converted_Weight', and 'Value' since they were no longer needed in my now cleaned data set.
 
